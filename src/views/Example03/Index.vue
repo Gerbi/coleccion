@@ -2,7 +2,6 @@
   <!-- eslint-disable max-len -->
   <div class="bg-gray-200 text-gray-900 antialiased font-sans">
     <div>
-      <Responsive />
       <Top />
       <div class="pt-5 sm:pt-0"></div>
       <main class="pt-40" style="font-family: Roboto">
@@ -130,7 +129,6 @@
 </template>
 
 <script>
-import Responsive from '../../components/Responsive.vue';
 import Top from './Top.vue';
 import Related from './Related.vue';
 import Footer from './Footer.vue';
@@ -140,7 +138,6 @@ export default {
   name: 'Articles',
   components: {
     Iframe,
-    Responsive,
     Top,
     Footer,
     Related,
