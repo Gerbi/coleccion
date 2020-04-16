@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable max-len -->
   <footer>
-    <div class="py-6 mt-2 text-white bg-black">
+    <div class="py-6 mt-2 text-white bg-gray-800">
       <div class="flex justify-center py-4">
         <a href="#" class="mx-3 font-sans text-sm font-medium text-gray-300">Privacy</a>
         <a href="#" class="mx-3 font-sans text-sm font-medium text-gray-300">Policy Terms of Use</a>
