@@ -1,8 +1,8 @@
 <template>
   <!-- eslint-disable max-len -->
-  <main class="mb-4 sm:mb-6 px-4">
+  <main class="mb-4 px-2 sm:mb-6 sm:px-4">
     <div class="mx-auto max-w-6xl sm:px-6 lg:px-8">
-      <div class="overflow-hidden bg-white rounded-md shadow">
+      <div class="overflow-hidden bg-white sm:rounded-md shadow">
         <div class="px-4 pt-5 pb-3 bg-white sm:px-6">
           <h3 class="text-lg font-semibold leading-6 text-gray-900">
             Related Articles
