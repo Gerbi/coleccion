@@ -3,8 +3,8 @@
   <div class="bg-white top-0 z-40 shadow fixed w-full">
       <div class="w-full pt-1 pb-1 bg-gray-800"></div>
       <div class="bg-gray-800">
-        <div class="container mx-auto lg:px-8 xl:px-32">
-          <nav class="relative flex flex-wrap items-center justify-between md:py-4 xl:py-6">
+        <div class="max-w-6xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
+          <nav class="relative flex flex-wrap items-center justify-between xl:px-10 md:py-4">
             <div class="relative z-10 flex-shrink-0 py-4 pl-4 text-xl font-bold text-white md:p-0">
               Breaking News
             </div>
@@ -47,7 +47,7 @@
         </div>
         <!-- Off-canvas menu background overlay -->
         <transition
-          enter-class="opacity-0"
+          enter-class="opacity-25"
           enter-active-class="ease-out transition-medium"
           enter-to-class="opacity-100"
           leave-class="opacity-100"
@@ -162,88 +162,93 @@
           </div>
         </transition>
       </div>
-      <div class="container px-6 py-4 mx-auto lg:px-8 xl:px-32">
+      <div class="max-w-6xl mx-auto px-2 py-4 sm:px-4 md:px-6 lg:px-8">
         <ul class="flex items-center justify-around mx-auto -mx-2 lg:hidden">
           <li class="">
             <a href="/news">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" class="w-8 h-8">
                 <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
               </svg>
             </a>
           </li>
           <li class="">
             <a href="/msg">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" class="w-8 h-8">
                 <path d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
               </svg>
             </a>
           </li>
           <li class="">
             <a href="/msg">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" class="w-8 h-8">
                 <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
               </svg>
             </a>
           </li>
           <li class="">
             <a href="/msg">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" class="w-8 h-8">
                 <path d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>
               </svg>
             </a>
           </li>
           <li class="">
             <a href="/msg">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" class="w-8 h-8">
                 <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
               </svg>
             </a>
           </li>
         </ul>
-        <div class="relative overflow-x-scroll lg:overflow-hidden flex items-center mt-4 xl:mt-0">
-          <button
-            ref="openButton"
-            @click="open"
-            type="button"
-            class="hidden mx-4 text-gray-600 md:block focus:outline-none focus:text-gray-200"
-            aria-label="Menu"
-          >
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 3 6.55228 3 6Z"
-              />
-              <path
-                d="M3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12Z"
-              />
-              <path
-                d="M4 17C3.44772 17 3 17.4477 3 18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18C21 17.4477 20.5523 17 20 17H4Z"
-              />
-            </svg>
-          </button>
-          <a
-            href="#"
-            class="flex items-center text-sm font-medium text-gray-900 hover:text-gray-700"
-          >Politics
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 ml-1"><path d="M9 5l7 7-7 7"></path></svg></a
-          >
-          <a
-            href="#"
-            class="flex items-center ml-10 text-sm font-medium text-gray-900 hover:text-gray-700"
-          >Economy
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 ml-1"><path d="M9 5l7 7-7 7"></path></svg></a
-          >
-          <a
-            href="#"
-            class="flex items-center ml-10 text-sm font-medium text-gray-900 hover:text-gray-700"
-          >Sports
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 ml-1"><path d="M9 5l7 7-7 7"></path></svg></a
-          >
-          <a
-            href="#"
-            class="flex items-center ml-10 text-sm font-medium text-gray-900 hover:text-gray-700"
-          >Network
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 ml-1"><path d="M9 5l7 7-7 7"></path></svg></a
-          >
+        <div class="relative flex items-center justify-between mt-4 xl:px-10 xl:mt-0">
+          <div class="flex">
+            <button
+              ref="openButton"
+              @click="open"
+              type="button"
+              class="hidden mr-4 text-gray-600 md:block focus:outline-none focus:text-gray-200"
+              aria-label="Menu"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 3 6.55228 3 6Z"
+                />
+                <path
+                  d="M3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12Z"
+                />
+                <path
+                  d="M4 17C3.44772 17 3 17.4477 3 18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18C21 17.4477 20.5523 17 20 17H4Z"
+                />
+              </svg>
+            </button>
+            <a
+              href="#"
+              class="flex items-center text-sm font-medium text-gray-900 hover:text-gray-700"
+            >Politics
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 ml-1"><path d="M9 5l7 7-7 7"></path></svg></a
+            >
+            <a
+              href="#"
+              class="flex items-center ml-4 text-sm font-medium text-gray-900 hover:text-gray-700"
+            >Economy
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 ml-1"><path d="M9 5l7 7-7 7"></path></svg></a
+            >
+            <a
+              href="#"
+              class="flex items-center ml-4 text-sm font-medium text-gray-900 hover:text-gray-700"
+            >Sports
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 ml-1"><path d="M9 5l7 7-7 7"></path></svg></a
+            >
+            <a
+              href="#"
+              class="flex items-center ml-4 text-sm font-medium text-gray-900 hover:text-gray-700"
+            >Network
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 ml-1"><path d="M9 5l7 7-7 7"></path></svg></a
+            >
+          </div>
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-7 h-7 text-gray-700 hidden md:block">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+          </svg>
         </div>
       </div>
     </div>
