@@ -1,19 +1,19 @@
 <template>
   <!-- eslint-disable max-len -->
-  <div class="container w-full mx-auto">
+  <div class="container mt-10 w-full mx-auto">
     <div class="relative flex flex-col w-full min-w-0 mb-8 break-words bg-white shadow-lg">
       <div class="flex">
-        <div class="w-full md:w-6/12" style="height: 500px">
+        <div class="hidden sm:block w-full md:w-6/12" style="height: 500px">
           <img
             alt="..."
             class="w-full h-full object-cover"
-            src="../assets/img/3.jpg"
+            src="../../assets/img/3.jpg"
           />
         </div>
-        <div class="w-full pt-10">
+        <div class="w-full py-10">
           <h3 class="text-3xl font-semibold text-center uppercase">free 7 days</h3>
           <h3 class="text-3xl font-bold text-center uppercase">online booking</h3>
-          <div class="flex w-full px-20 py-12">
+          <div class="flex w-full px-4 sm:px-20 py-12">
             <div class="w-1/3">
               <div class="w-full px-3 mb-6 md:mb-0">
                 <label class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase" for="grid-state">

@@ -113,7 +113,7 @@
             <a
               href="https://www.github.com/gerbi"
               class="text-gray-200 hover:text-gray-800"
-              >Gerbidev</a
+              >Gerbi</a
             >
           </div>
         </div>
